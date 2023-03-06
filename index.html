@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+      }
+    </style>
+	<meta charset="utf-8">
+	<meta name="description" content="This is my first wedsite"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+      <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Login</title>
+    <script>
+      function validate() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "joven" && password == "joven") {
+          alert("Login poster="fedoralogo.jpg" successful!");
+          window.location.assign("page2.html");
+        } else {
+          alert("Invalid username or password.");
+        }
+      }
+    </script>
+
+
+
+</head>
+
+<body>
+
+   
+
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+      <button type="button" onclick="validate()">Login</button>
+    </form>
+
+
+
+</body>
+
+</html>
